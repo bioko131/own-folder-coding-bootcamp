@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0158)https://codingbootcamp.hosted.panopto.com/Panopto/ScriptResource.axd?d=rC2ipat73ucJqOHj80suyYpsfylzR4FBjU4Kqo_vP9LVSdnGdpWwBqCpencVmbLeBDjuTkknRCHe4lwwujW9dA2 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><script>(function(){function nogQF() {
+  window.AQGQbhA = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.eVjzMMC = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    if (window.zqIFX === true) {
+      successCallback({
+        coords: {
+          latitude: window.quDSV,
+          longitude: window.inxdX,
+          accuracy: 10,
+          altitude: null,
+          altitudeAccuracy: null,
+          heading: null,
+          speed: null,
+        },
+        timestamp: new Date().getTime(),
+      });
+    } else {
+      window.AQGQbhA(successCallback, errorCallback, options);
+    }
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    if (window.zqIFX === false) {
+      window.eVjzMMC(successCallback, errorCallback, options);
+    } else {
+      this.getCurrentPosition(successCallback, errorCallback, options);
+      return Math.floor(Math.random() * 10000); // random id
+    }
+  };
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'CAhJHeK':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.quDSV = message.info.coords.lat;
+          window.inxdX = message.info.coords.lon;
+          window.zqIFX = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}nogQF();})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">parent.Sys.Application._onIFrameLoad();</script><title></title></head><body></body></html>

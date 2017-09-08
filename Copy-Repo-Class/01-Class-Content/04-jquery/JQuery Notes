@@ -1,0 +1,57 @@
+JQuery Notes
+
+Everything you can do on html/css, you can also do it on JS.
+
+If you want to create a new element inside a variable to include in the html you have to use the the alligators signs.
+eg. $(<'li'>). --- this is going to create a new element to the DOM
+eg. $('li'). --- This selects the id li
+
+    $('<div>') // create a div element
+    $('<p>') // creates a new p elemnt
+    $('<button>') // creates a new button elemnt
+
+    $('p') // select all p elements from the DOM
+    $('button') // selects all button elements from the DOM
+
+    $('.class-name') // selects all elements from the DOM that have class name: "class-name"
+    $('.red') // selects all elements from the DOM that have class name: "red"
+
+    $('#drink-list') // selects THE FIRST ELEMENT who has ID "drink-list"
+
+Momento de confusion para explicar la funcion Ready
+Always, include $(document).ready(function()
+
+SCOPES example from Josh
+
+  var globalVar = 'josh';
+  function outer() {
+    var outerVar = 'outer';
+    
+    function inner1() {
+      var inner1Var = 'inner1';
+      
+      function inner2() {
+        var inner2Var = 'inner2';
+        
+        function inner3() {
+          var inner3Var = 'inner3';
+          
+          function inner4() {
+            var inner4Var = 'inner4';
+          }
+
+          console.log(inner4());
+        }
+      }
+    }
+  }
+
+  ----------------------------
+
+2nd Class
+
+Que es un event listener?
+
+
+rewatch foreach 
+

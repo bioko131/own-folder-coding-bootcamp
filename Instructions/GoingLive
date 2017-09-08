@@ -1,0 +1,24 @@
+git rgit git lls
+1. Created folder.
+ 
+2. "cd (folder name)"
+
+3. git init
+
+4. touch index.html
+ 
+5. Create some basic Html in this file and save it.
+ 
+6. Run git status and you should see something similar to this.
+
+7. git add (filename, in this case index.html)
+
+8. git commit -m "(whatever you want the commit message to be)"
+ 
+9. run "git remote add origin (name of remote location - 'origin') (the url you copied from github)"
+
+10. run "git remote -v" to see that the URL is in the list.
+
+11. git push -u origin master
+
+If you create a readme file you don't have to go through all this, just clone the entire repo.

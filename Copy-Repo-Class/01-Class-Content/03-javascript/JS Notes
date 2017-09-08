@@ -1,0 +1,55 @@
+JS Notes
+
+
+First day of JS class #7
+
+"If" 
+
+or "else if" do have conditionals, but
+
+"else" Never have conditionals!
+
+If you add a number and a string, you will always get a STRING!
+
+How to get the length of an array
+ex. console.log (animals.length)
+
+animals[aniamls.length=1] Como definir esto? y por que?
+
+Second day of JS class #8
+
+Psuecoding is very important.
+
+If you click "cancel" on a prompt, you get a NULL as a result.
+
+document.write is only for the DOM. this is only visible to the user. This also overwrites evertyhing on the page.
+
+console.log is only readable on dev tools.
+
+Equivalent operator name is for "===". Also "==" equals "===".
+
+!== is the oppsito of "==="
+
+parseInt() + Number equals a math equation
+
+i++ === increment i by 1
+
+if (userGuess !== 'r' && userGuess !== 'p' && userGuess !== 's'){
+	return;
+}
+
+The name of of an item inside an array, you ahve to access it as Array[index of the array] = true
+
+Methods are functions that live on some type, specifically for strings, but Methods === Functions
+
+typeOf
+
+variables can be : “string, arrays, number, boolean, function, and objects”
+
+Keys and properties are the same thing
+
+Using brackets or dots to access objects or variables is the same, try to user only dots. (Notation)…. but no when accessing an undefined variable, use a square brackets notation.
+
+defining variables, and having 
+
+“””””””This””””””” is the context of the currently running function

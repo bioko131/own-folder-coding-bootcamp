@@ -1,0 +1,9 @@
+adder changes information on the dom
+data stores the information but does no tthe change the element on the Dom
+
+attr ---> what you see on the page (html). Ver exactamente la definicion de attr.
+data ---> stored in memory data
+
+return it will always get you out of every fucntion
+
+if you dont declare a variable inside a function or whatever it will be turned into a global variable.

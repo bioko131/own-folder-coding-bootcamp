@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Favorite TV Shows</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      // the variable favTVshows is for an array that it is still empty
+      // the var tvShow is still not defined, probably added by some funciton later
+      var favTVshows = [];
+      var tvShow;
+
+      // For Loop Elements Repeats 3 Times
+      for (var i = 1; i < 4; i++) {
+
+        // the variable tvShow will be defined by the prompt input
+        tvShow = prompt("What's your #" + i + " favorite TV show?");
+
+        // the prompt input will be pushed to the favTVshows
+        favTVshows.push(tvShow);
+      }
+
+      // a new for-loop created to show the new array of the favTVshows just created from the prompt input
+      // for (var j = 1; j < favTVshows.length; j++) {
+
+        // alert the array favTVshows
+        alert(favTVshows[0]);
+        alert(favTVshows[1]);
+        alert(favTVshows[2]);
+      
+
+    </script>
+
+  </body>
+</html>

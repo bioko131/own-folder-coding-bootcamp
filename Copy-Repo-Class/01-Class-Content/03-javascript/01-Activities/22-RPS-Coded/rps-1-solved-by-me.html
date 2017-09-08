@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 1</title>
+</head>
+
+<body>
+
+  <div id="game">
+
+
+  </div>
+
+  <script type="text/javascript">
+
+  var computerOptions = ['r', 'p', 's'];
+
+  var wins = 0;
+  var losses = 0;
+  var ties = 0
+    // Whenever a key is pressed, alert "pressed a button".
+    document.onkeyup = function() {
+      var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+      console.log(userGuess); 
+
+      var computerGuess = computerOptions[Math.floor(Math.random()*computerOptions.length)]
+      console.log(computerGuess);
+
+      if (userGuess === 'r' || userGuess === 'p' || userGuess === 's'){
+
+        if (userGuess === 'r' && computerGuess === 'p'){
+          losses++;
+          // alert('losses: ' + losses);
+         } else if (userGuess === 'r' && computerGuess === 's'){
+          wins++;
+          // alert('wins: ' + wins);
+          } else if (userGuess === 'p' && computerGuess === 's'){
+            losses++;
+            // alert('losses: ' + losses);
+          } else if (userGuess === 'p' && computerGuess === 'r'){
+            wins++;
+            // alert('wins: ' + wins);
+          } else if (userGuess === 's' && computerGuess === 'p'){
+            wins++;
+            // alert('wins: ' + wins);
+          } else if (userGuess === 's' && computerGuess === 'r'){
+            losses++;
+            // alert('losses: ' + losses);
+          } else {
+            userGuess === computerGuess;
+            ties++;
+            // alert('ties: ' + ties);
+          } 
+          console.log('Correct word chosen');
+      } else {
+        alert('please select r, p or s');
+      }
+
+    var html = "<p>Press r p s to play</p>" +
+    "<p> wins: " + wins + "</p>" +
+    "<p> losses: " + losses + "</p>" +
+    "<p> ties: " + ties + "</p>";
+
+    document.getElementById('game').innerHTML = html;
+
+    };
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
+
+<!-- PSEUDOCODE
+
+Set up variables of the user to guess
+
+select the keys to be pressed so you can document.ElementById
+
+If a user presses certain key, what happens
+
+else what happens
+ -->

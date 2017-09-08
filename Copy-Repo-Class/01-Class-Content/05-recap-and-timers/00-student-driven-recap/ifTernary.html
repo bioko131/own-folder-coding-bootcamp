@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple crystal game</title>
+  
+  <style type="text/css">
+    
+    .crystal-image {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+  
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+  
+  <div id="crystals">
+    CLICK ME!
+  </div>
+  
+  <div id="reset">
+    RESET!
+  </div>
+  
+  <!-- JAVASCRIPT  -->
+  <!-- ===================================== -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+    
+    // IFs
+    
+    var someStrings = ['hello', 'pineapples', 'penquins'];
+    
+    for (var i = 0; i < someStrings.length; i++) {
+      var word = someStrings[i];
+      
+      if (word === 'hello') {
+        console.log('GOOD DAY SIIIIIIIIIIR!');
+      }
+      if (word === 'pineapples') {
+        console.log('What? ... I don\'t understand');
+      }
+      if(word === 'penquins') {
+        console.log('Listen, I don\'t know who you think you are but the isn\'t even a word and I am quite scared.')
+      }
+    }
+    
+    // SWITCH EQUIVALENT - note word is only looked up once, less repeated logic ( i.e less opportunities for bugs)
+    
+    for (var i = 0; i < someStrings.length; i++) {
+      var word = someStrings[i];
+      switch (word) {
+        case 'hello':
+        console.log('GOOD DAY SIIIIIIIIIIR!');
+        break;
+        case 'pineapples':
+        console.log('rekhbgerbjherbhgje');
+        break;
+        case 'penquins':
+        console.log('GOOD Pineapples, thankyou.');
+        break;
+        default:
+        console.log('Your silence is more terrifying, please speak.');
+      }
+    }
+    
+    // LOGICAL OPERATORS used outside of if/else conditional to check path to deep property on object thus preventing 'access x of undefined' errors stopping script
+    
+    var deepObject = {
+      outer12: false,
+      outer1: {
+        inner1: {
+          placeWithMoney: 'MONEY',
+        },
+      }
+    }
+    
+    var cashMoney = deepObject.outer12 &&
+    deepObject.outer1.inner1 &&
+    deepObject.outer1.inner1.placeWithMoney;
+    
+    // AN ACTUAL TERNARY:
+    
+    var isTrue = false;
+    
+    isTrue ? console.log('yes!') : console.log('no!')
+    
+    console.log(cashMoney);
+    
+  </script>
+</body>
+</html>

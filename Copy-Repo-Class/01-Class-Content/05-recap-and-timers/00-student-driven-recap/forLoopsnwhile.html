@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple crystal game</title>
+  
+  <style type="text/css">
+    
+    .crystal-image {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+  
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+  
+  <div id="crystals">
+    CLICK ME!
+  </div>
+  
+  <div id="reset">
+    RESET!
+  </div>
+  
+  <!-- JAVASCRIPT  -->
+  <!-- ===================================== -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+    
+    // WHILE LOOP THAT WILL CRASH BROWSER! DONT UNCOMMENT/USE:
+    
+    // var isTrue = true;
+    
+    // while (isTrue) {
+      //   console.log('HAAAAALP, AM BREAKING!');
+      // }
+      
+      var arrayWithTwo = ['thing1', 'thing2'];
+      
+      // For loop pattern for doing something to each member of an array
+      for (
+      var index = 0;
+      index < arrayWithTwo.length;
+      index++
+      ) {
+        console.log(arrayWithTwo[index]);
+      }
+      
+      // For loop pattern for building an array of numbers
+      var arrayOfLotsOfNumbers = [];
+      
+      for (
+      var index = 19;
+      index < 120;
+      index = index++
+      ) {
+        arrayOfLotsOfNumbers.push(index);
+      }
+      
+      console.log(arrayOfLotsOfNumbers)
+      
+      
+    </script>
+  </body>
+  </html>
+  

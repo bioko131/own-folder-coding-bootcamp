@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scope</title>
+</head>
+<body>
+
+  <h2>Check console to see the madness!</h2>
+
+  <script>
+    var outerFunction = function() {
+
+      var x = 5;
+
+      var nestedFunction = function() {
+
+        var y = 7;
+
+        // 5
+        console.log("X: " + x);
+
+        // 7
+        console.log("Y: " + y);
+
+        var z = 10;
+        // 10
+        console.log("Z (inside): " + z);
+      };
+
+      return nestedFunction;
+    };
+
+    var myFunction = outerFunction();
+    myFunction();
+
+    // undefined
+    console.log("Z (outside): " + z);
+
+</script>
+
+</body>
+</html>

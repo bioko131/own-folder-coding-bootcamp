@@ -1,0 +1,17 @@
+.first:default{
+	background-color: blue;
+}
+
+.second:active{
+	color: red;
+	border: blue;
+	border-width: 5px;
+}
+
+.third:hover{
+	color: none;
+}
+
+.fourth:focus{
+
+}
